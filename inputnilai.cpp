@@ -3,6 +3,24 @@
 
 using namespace std;
 
+void ganjilgenap(int nilai[], int x)
+{
+    string jenisnilai;
+
+    for (int i = 0; i < x; i++)
+    {
+        if (nilai[i] % 2 == 0)
+        {
+            jenisnilai = "Genap";
+        }
+        else
+        {
+            jenisnilai = "Ganjil";
+        }
+        cout << "Nilai " << nilai[i] << " = " << jenisnilai << endl;
+    }
+}
+
 int main()
 {
     int x;
@@ -18,8 +36,5 @@ int main()
         cin >> nilai[i];
     }
 
-    for (int i = 0; i < x; i++)
-    {
-        cout << "Nilai " << i << "= " << nilai[i] << endl;
-    }
+    ganjilgenap(nilai, x);
 }
