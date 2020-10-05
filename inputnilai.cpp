@@ -1,8 +1,10 @@
 #include <iostream>
 #include <math.h>
 
+//Deklarasi namespace std
 using namespace std;
 
+//method untuk menentukan ganjil-genap
 void ganjilgenap(int nilai[], int x)
 {
     string jenisnilai;
@@ -21,20 +23,26 @@ void ganjilgenap(int nilai[], int x)
     }
 }
 
+//method utama
 int main()
 {
+    // deklarasi variabel x
     int x;
 
+    //input memasukkan nilai x
     cout << "Masukkan Jumlah Nilai : ";
     cin >> x;
 
+    // deklarasi variabel array nilai
     int nilai[x];
 
+    //input nilai sebanyak x
     for (int i = 0; i < x; i++)
     {
         cout << "Masukkan Nilai Ke " << i + 1 << " : ";
         cin >> nilai[i];
     }
 
+    //panggil method ganjil-genap
     ganjilgenap(nilai, x);
 }
